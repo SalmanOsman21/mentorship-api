@@ -1,4 +1,33 @@
-node_modules
 
+# Node.js dependencies
+node_modules/
+
+# Environment variables
 .env
+.env.*
 
+# Build files
+dist/
+build/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Uploads
+uploads/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Swagger output
+swagger-output.json
+
+# Temporary files
+*.tmp
