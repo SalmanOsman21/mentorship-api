@@ -1,5 +1,6 @@
-[ ✅ ] github initialization 
-[ ✅ ] Mongodb atlas 
-[ ✅ ] Render deployment
-[ ✅ ] Enivorment Variables
-[ ✅ ] Git ignore
+
+- [✅] GitHub Initialization
+- [✅] MongoDB Atlas Configuration
+- [✅] Render Deployment
+- [✅] Environment Variables Configuration
+- [✅] Git Ignore Configuration
