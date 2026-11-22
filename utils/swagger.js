@@ -1,39 +1,46 @@
-import swaggerJSDoc from 'swagger-jsdoc';
 
-import dotenv from 'dotenv';
+import swaggerJSDoc from "swagger-jsdoc";
+import dotenv from "dotenv";
 
 dotenv.config();
 
 const options = {
   definition: {
-    openapi: '3.0.0',
+    openapi: "3.0.0",
+
     info: {
-      title: 'Task Manager API',
-      version: '1.0.0',
-      description: 'API documentation for our task manager backend'
+      title: "Mentorship API",
+      version: "1.0.0",
+      description: "API documentation for Mentorship backend",
     },
+
     servers: [
       {
-
-        url: process.env.NODE_ENV === "development" ? 'http://localhost:5000' : "https://mentorship-api-5mdj.onrender.com"
-      }
+        url:
+          process.env.NODE_ENV === "development"
+            ? "http://localhost:5000"
+            : "https://mentorship-api-5mdj.onrender.com",
+      },
     ],
+
     components: {
       securitySchemes: {
         bearerAuth: {
-          type: 'http',
-          scheme: 'bearer',
-          bearerFormat: 'JWT'
-        }
-      }
+          type: "http",
+          scheme: "bearer",
+          bearerFormat: "JWT",
+        },
+      },
     },
+
     security: [
       {
-        bearerAuth: []
-      }
-    ]
+        bearerAuth: [],
+      },
+    ],
   },
-  apis: ['./routes/*.js'] // Where your route files live
+
+  apis: ["./routes/*.js"],
 };
 
 export const swaggerSpec = swaggerJSDoc(options);
