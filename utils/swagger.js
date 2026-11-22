@@ -15,7 +15,7 @@ const options = {
     servers: [
       {
 
-        url: process.env.NODE_ENV= "development" ? 'http://localhost:5000' : "https://mentorship-api-5mdj.onrender.com"
+        url: process.env.NODE_ENV === "development" ? 'http://localhost:5000' : "https://mentorship-api-5mdj.onrender.com"
       }
     ],
     components: {
