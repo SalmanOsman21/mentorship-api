@@ -28,7 +28,7 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(express.json());
 
-app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 app.use(helmet())
 
