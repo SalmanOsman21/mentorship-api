@@ -56,6 +56,10 @@ app.use('/admin', adminRoutes);
 app.use('/upload', uploadRoutes)
 app.use('/tasks', taskRoutes)
 
+//Redirect to Swagger
+app.get("/", (req, res) => {
+  res.redirect("/api/docs/");
+});
 
 
 // Error handling
